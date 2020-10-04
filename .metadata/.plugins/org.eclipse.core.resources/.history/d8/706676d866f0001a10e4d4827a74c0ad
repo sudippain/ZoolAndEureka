@@ -1,0 +1,42 @@
+package com.test.collection;
+
+ class A{
+	static String a ="Sudip";
+	public A(){
+		System.out.println("Constractor from A");
+	}
+	public A(int a,int b) {
+		System.out.println(a+b);
+	}
+	 void parentMethod() {
+		System.out.println("This is from Parent Class");
+	}
+}
+
+
+public class Inheritance extends A {
+	
+	public Inheritance() {
+		super();
+	
+	}
+	public Inheritance(int a,int b) {
+		super(a,b);
+	}
+	public void childMethod() {
+		
+	
+		System.out.println("This is from child Method");
+		
+	}
+	
+	public static void main(String[] args) {
+		Inheritance obj = new Inheritance();
+		Inheritance obj1 = new Inheritance(2,3);
+		
+		System.out.println(obj.a);
+		obj.parentMethod();
+		obj.childMethod();
+	}
+
+}

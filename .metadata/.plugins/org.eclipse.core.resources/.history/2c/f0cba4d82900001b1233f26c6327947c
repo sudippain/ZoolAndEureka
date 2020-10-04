@@ -1,0 +1,4 @@
+
+spring.thymeleaf.prefix=classpath:/templates/
+spring.thymeleaf.suffix: .jsp //By default this is html when you don't have assign.
+spring.thymeleaf.cache: false

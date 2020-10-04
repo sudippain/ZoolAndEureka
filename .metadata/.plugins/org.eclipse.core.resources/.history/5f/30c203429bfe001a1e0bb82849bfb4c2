@@ -1,0 +1,16 @@
+package com.feature.StreamApi;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.function.Supplier;
+import java.util.stream.Stream;
+
+public class RandomForEach {
+
+	public static void main(String[] args) {
+		
+	 Supplier<Integer> s =() -> (int)(Math.random()*10);
+	 List<Integer> l = new ArrayList<>();
+	 System.out.println(s);
+	}
+}

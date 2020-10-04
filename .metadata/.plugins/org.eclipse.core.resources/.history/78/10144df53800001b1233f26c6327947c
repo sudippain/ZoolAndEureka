@@ -1,0 +1,24 @@
+package com.get.properties.GetProperties.controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.get.properties.GetProperties.model.AppProperties;
+
+@RestController
+@RequestMapping("GetProp/ConfigurationProperties")
+public class GetPropUsingConfigurationPropertiesAnnotation {
+
+	@Autowired
+	AppProperties app;
+	@RequestMapping(method = RequestMethod.GET,value="/getAll")
+	private String getAllProperties() {
+	
+		System.out.println(app.getPrefix());
+      return new AppProperties().getPrefix();
+	}
+}

@@ -1,0 +1,16 @@
+package com.get.properties.GetProperties.controller;
+
+import java.util.List;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+@RequestMapping("GetProp/ConfigurationProperties")
+public class GetPropUsingConfigurationPropertiesAnnotation {
+
+	private List<String> getAllProperties() {
+	
+
+	}
+}

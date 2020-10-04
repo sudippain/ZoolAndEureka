@@ -1,0 +1,61 @@
+package com.test.collection;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+import java.util.TreeSet;
+
+public class MaxStringOccuranceSentence {
+	
+	private static void stringOccurance(List<String> l) {
+		
+   Map<String, Integer> map = new HashMap<>();
+   for(String list : l) {
+	   if(map.containsKey(list)) {
+		   int count = map.get(list);
+		   map.put(list, count+1);
+	   }
+	   else
+		   map.put(list, 1);
+   }
+  
+	
+	
+	
+	  Set<String> s = new TreeSet<String>(map.keySet());
+	  int max=0;
+	  String maxName="";
+	  for(String temp : s)
+		  System.out.println(temp);
+	  for(String si: s) {
+	   if(max <= map.get(si)) {
+		   max = map.get(si);
+		   maxName = si;
+	   }
+		  
+	  }
+	  System.out.println(maxName);
+	 
+	}
+
+public static void main(String[] args) {
+	
+	List<String> list = new ArrayList<>();
+	list.add("Red");
+	list.add("Yellow");
+	list.add("Green");
+	list.add("Blue");
+	list.add("Yellow");
+	list.add("White");
+	list.add("Red");
+	list.add("Green");
+	list.add("Green");
+	
+	stringOccurance(list);
+	
+	
+}
+}

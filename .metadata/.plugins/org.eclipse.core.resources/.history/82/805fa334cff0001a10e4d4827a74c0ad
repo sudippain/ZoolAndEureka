@@ -1,0 +1,37 @@
+package com.test.collection;
+
+class M{
+	public void run() {
+		for(int i =0;i<5;i++)
+			System.out.println("Thread from class A"+i);
+	}
+}
+
+class N{
+	public void run() {
+		for(int i =0;i<5;i++)
+			System.out.println("Thread from class N"+i);
+	}
+}
+
+class O{
+	public void run() {
+		System.out.println("From class O run() start");
+		for(int i =0;i<5;i++)
+			System.out.println("Thread from class O"+i);
+		System.out.println("From class O run() End");
+	}
+}
+
+
+
+public class ThreadImpl {
+
+	
+	public void run() {
+		System.out.println("From class ThreadImpl run() start");
+		for(int i =0;i<5;i++)
+			System.out.println("Thread from class ThreadImpl"+i);
+		System.out.println("From class ThreadImpl run() End");
+	}
+}

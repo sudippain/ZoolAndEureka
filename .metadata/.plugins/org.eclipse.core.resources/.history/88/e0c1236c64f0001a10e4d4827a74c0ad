@@ -1,0 +1,24 @@
+package com.test.collection;
+
+ class A{
+	String a ="Sudip";
+	public void parentMethod() {
+		System.out.println("This is from Parent Class");
+	}
+}
+
+public class Inheritance extends A {
+	
+	public void childMethod() {
+		System.out.println("This is from child Method");
+		
+	}
+	
+	public static void main(String[] args) {
+		A obj = new Inheritance();
+		(Inheritance)obj.childMethod();
+		System.out.println(obj.a);
+		obj.parentMethod();
+	}
+
+}

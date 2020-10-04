@@ -1,0 +1,18 @@
+package com.feature.StreamApi;
+
+@FunctionalInterface
+interface functionalIface{
+	abstract void show(int i);
+}
+
+public class FunctionalInterfaceDemo implements functionalIface{
+
+	public static void main(String[] args) {
+		functionalIface obj ;
+		 obj = (i) -> System.out.println(i);
+		 obj.show(6);
+	}
+
+	
+	
+}

@@ -1,0 +1,15 @@
+package com.get.properties.GetProperties.controller;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+@RequestMapping("/api")
+public class HelloWorldStringController {
+
+	@RequestMapping(method = "RequestMethod.GET",value = "/hello")
+	private string hello() {
+		return "Hello World";
+
+	}
+}

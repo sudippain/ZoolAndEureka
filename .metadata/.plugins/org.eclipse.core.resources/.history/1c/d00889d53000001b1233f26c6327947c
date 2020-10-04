@@ -1,0 +1,5 @@
+package com.get.properties.GetProperties.controller;
+
+public class GetPropUsingValueAnnotation {
+
+}

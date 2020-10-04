@@ -1,0 +1,14 @@
+--- 
+eureka: 
+  client: 
+    defaultZone: "http://${eureka.instance.hostname}:${server.port}/eureka/"
+    fetchRegistry: false
+    registerWithEureka: flase
+    serviceUrl: ~
+  instance: 
+    hostname: localhost
+server: 
+  port: 8661
+spring: 
+  application: 
+    name: zuul-server

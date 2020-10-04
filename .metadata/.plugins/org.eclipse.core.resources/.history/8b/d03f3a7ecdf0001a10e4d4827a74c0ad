@@ -1,0 +1,30 @@
+package com.test.collection;
+
+interface U{
+	final String name = "Sudip";
+	String name();
+	double mul(int a,int b);
+	
+}
+public class interfaceimpl  implements U{
+
+	@Override
+	public String name() {
+		// TODO Auto-generated method stub
+		return name;
+	}
+
+	@Override
+	public double mul(int a, int b) {
+		// TODO Auto-generated method stub
+		return a*b;
+	}
+	
+	public static void main(String[] args) {
+		interfaceimpl obj = new interfaceimpl();
+		System.out.println(obj.name);
+		System.out.println(obj.name());
+		System.out.println(obj.mul(2.2, 3.5)());
+	}
+
+}

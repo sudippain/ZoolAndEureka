@@ -1,0 +1,13 @@
+package com.get.properties.GetProperties;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class GetPropertiesApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(GetPropertiesApplication.class, args);
+	}
+
+}

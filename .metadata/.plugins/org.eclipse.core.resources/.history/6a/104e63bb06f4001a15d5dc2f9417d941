@@ -1,0 +1,63 @@
+package com.test.collection;
+
+import java.util.ArrayList;
+import java.util.Collections;
+
+class Movie implements Comparable<Movie> {
+
+	String movieName;
+	double movieRating;
+	int movieYear;
+	
+	@Override
+	public int compareTo(Movie o) {
+	return this.movieName.compareTo(o.getMovieName());
+	}
+	
+	public Movie(String movieName,double movieRating,int movieYear) {
+		this.movieName =  movieName;
+		this.movieRating = movieRating;
+		this.movieYear = movieYear;
+	}
+
+	public String getMovieName() {
+		return movieName;
+	}
+
+	public double getMovieRating() {
+		return movieRating;
+	}
+
+	public int getMovieYear() {
+		return movieYear;
+	}
+	
+	
+	
+}
+
+
+class Comparable_Movie{
+	public static void main(String[] args) {
+		
+		ArrayList<Movie> list = new ArrayList<Movie>();
+		
+		list.add(new Movie("Kahona Paya Ha", 6.8, 2001));
+		list.add(new Movie("Don", 3.8, 2004));
+		list.add(new Movie("D.D.L.J", 7.8, 1994));
+		
+		System.out.println("Before Sorting Movie by year");
+		for(Movie m : list)
+			System.out.println("Movie Name -->"+m.getMovieName()+" | Rating --> "+m.getMovieRating()+" | Year --> "+m.getMovieYear() );
+		
+		Collections.sort(list);
+		
+		System.out.println("After Sorting Movie by year");
+		for(Movie m : list)
+			System.out.println("Movie Name -->"+m.getMovieName()+" | Rating --> "+m.getMovieRating()+" | Year --> "+m.getMovieYear() );
+		
+		
+	}
+	
+	
+}

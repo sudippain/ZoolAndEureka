@@ -1,0 +1,16 @@
+package com.feature.StreamApi;
+
+
+
+public class StringValueOf {
+	
+	static void change(int num) {
+		System.out.println(num);
+	}
+
+	public static void main(String[] args) {
+		int n = 3;
+		String val = String.valueOf(3) ;
+		System.out.println(val);
+	}
+}

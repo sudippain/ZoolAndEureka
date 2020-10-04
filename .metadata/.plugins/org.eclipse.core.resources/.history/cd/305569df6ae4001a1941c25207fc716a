@@ -1,0 +1,15 @@
+package com.test.collection;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class TestOverride {
+	
+	String a = "this is a book";
+	char arr[]=a.toCharArray();
+    Map<Integer, Character> m = new HashMap<Integer, Character>();
+    
+    for(int i=0;i<arr)
+    
+	
+}

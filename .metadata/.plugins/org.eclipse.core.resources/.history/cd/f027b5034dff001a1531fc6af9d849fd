@@ -1,0 +1,13 @@
+package com.feature.StreamApi;
+
+public class CallableFutureDemo {
+
+	public static void main(String[] args) {
+		
+		String name = "Sudip";
+		int a = 2;
+		float b = 2.2F;
+		System.out.println(name.getClass());
+		System.out.println(a.ge);
+	}
+}

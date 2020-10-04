@@ -1,0 +1,15 @@
+package com.feature.StreamApi;
+
+import java.time.LocalDate;
+import java.time.Month;
+import java.time.format.DateTimeFormatter;
+
+public class DateTime  {
+
+	public static void main(String[] args) {
+		
+		DateTimeFormatter formatter=DateTimeFormatter.ISO_WEEK_DATE;
+		String d = LocalDate.of(1996, Month.MARCH, 25).format(formatter);
+		System.out.println(d);
+	}
+}

@@ -1,0 +1,8 @@
+package com.feature.StreamApi;
+
+public class squreFilterAvarage {
+
+	public static void main(String[] args) {
+		
+	}
+}

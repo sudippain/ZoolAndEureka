@@ -1,0 +1,38 @@
+package com.feature.StreamApi;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
+import java.util.stream.Collector;
+import java.util.stream.Collectors;
+
+public class StreamApiDemoMap {
+
+	public static void main(String[] args) {
+		
+		int mul =0;
+	    
+	    List<Integer> list2 = Arrays.asList(2,3,4,5,6);
+	    List<Integer> list3 = new ArrayList<>();
+	    for(int j : list2) {
+	    	
+	      mul = j * 2;
+	      list3.add(mul);
+	      
+	    }
+	    
+	   
+	    list3.clear();
+	    list3 = list2.stream().map(x -> x*x).collect(Collectors.toList());
+	    for(int j : list3)
+	    	System.out.println(j);
+	    
+		
+		
+			 
+	}
+	
+	
+
+}

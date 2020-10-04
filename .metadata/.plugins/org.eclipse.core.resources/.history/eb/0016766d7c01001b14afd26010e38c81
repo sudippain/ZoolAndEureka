@@ -1,0 +1,37 @@
+package com.example.Service1.controller;
+
+import org.codehaus.jettison.json.JSONException;
+import org.codehaus.jettison.json.JSONObject;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Bean;
+import org.springframework.http.HttpMethod;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.client.RestTemplate;
+
+@RestController
+@RequestMapping("/service1")
+public class Service1Controller {
+	
+	@Bean
+	public RestTemplate getRestTemplate() {
+		return new RestTemplate();
+		
+	}
+	
+	@Autowired
+	RestTemplate restTemplate;
+	
+	@RequestMapping(method = RequestMethod.GET,value = "/hello")
+	private String  hello() throws JSONException {
+		JSONObject jsonObject = new JSONObject();
+		
+		jsonObject.put("message", "Service 1 Hello");
+		jsonObject.put("message-2", restTemplate.exchange(
+				"http://localhost:8182/service2/hello", HttpMethod.GET,null,String.class));
+		return jsonObject.toString();
+
+	}
+
+}

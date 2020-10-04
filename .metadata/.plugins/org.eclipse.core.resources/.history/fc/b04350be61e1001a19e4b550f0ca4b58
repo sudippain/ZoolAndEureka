@@ -1,0 +1,20 @@
+package com.example.TestProject;
+
+
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
+import org.springframework.context.ConfigurableApplicationContext;
+
+
+@SpringBootApplication
+public class TestProjectApplication /* extends SpringBootServletInitializer */ {
+
+	public static void main(String[] args) {
+	 ConfigurableApplicationContext ctx = SpringApplication.run(TestProjectApplication.class, args);
+	 String [] beans = ctx.getBeanDefinitionNames();
+	 for(String b : beans)
+		 System.out.println(b); }
+
+}

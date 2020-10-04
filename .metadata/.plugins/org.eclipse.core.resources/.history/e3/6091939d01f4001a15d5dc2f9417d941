@@ -1,0 +1,47 @@
+package com.test.collection;
+
+import java.util.Comparator;
+class Movie implements Comparable<Movie>{
+
+	String movieName;
+	double movieRating;
+	int movieYear;
+	public Movie(String movieName,double movieRating,int movieYear) {
+		this.movieName = movieName;
+		this.movieRating = movieRating;
+		this.movieYear = movieYear;
+	}
+	
+	@Override
+	public int compareTo(Movie o) {
+		return this.movieYear - o.movieYear;
+	}
+
+	public String getMovieName() {
+		return movieName;
+	}
+
+	public double getMovieRating() {
+		return movieRating;
+	}
+
+	public int getMovieYear() {
+		return movieYear;
+	}
+	
+	
+	
+	
+	
+}
+class MovieName implements Comparator<Movie>
+{
+
+	@Override
+	public int compare(Movie m1, Movie m2) {
+		return m1.getMovieName().compareTo(m2.getMovieName());
+	}	
+}
+public class Comparator_Movie {
+
+}

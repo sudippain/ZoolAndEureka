@@ -1,0 +1,30 @@
+package com.feature.StreamApi;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class StreamApiDemo1 {
+
+	public static void main(String[] args) {
+		List<Integer> list = new ArrayList<>();
+		list.add(15);
+		list.add(12);
+		list.add(96);
+		list.add(36);
+		list.add(9);
+		usingExternalIterator(list);
+		lamdaStreamApi();
+	}
+
+	
+	private static void usingExternalIterator() {
+		
+		
+	}
+	
+	private static void lamdaStreamApi() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

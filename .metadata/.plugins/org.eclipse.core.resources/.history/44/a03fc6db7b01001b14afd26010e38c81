@@ -1,0 +1,28 @@
+package com.example.Service3.controller;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.client.RestTemplate;
+
+@RestController
+@RequestMapping("/service3")
+public class Service3Controller {
+	
+	
+	@Bean
+	public RestTemplate getRestTemplate() {
+		return new RestTemplate();
+		
+	}
+	
+	
+	@RequestMapping(method = RequestMethod.GET,value = "/hello")
+	private String  hello() {
+		return "Service3 Hello";
+		
+	}
+	
+
+}

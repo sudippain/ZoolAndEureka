@@ -1,0 +1,16 @@
+package com.example.SpringBootMongoDb;
+
+import org.apache.catalina.core.ApplicationContext;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ConfigurableApplicationContext;
+
+@SpringBootApplication
+public class SpringBootMongoDbApplication {
+
+	public static void main(String[] args) {
+		ConfigurableApplicationContext ctx=SpringApplication.run(SpringBootMongoDbApplication.class, args);
+	System.out.println(ctx.getApplicationName());
+	}
+
+}

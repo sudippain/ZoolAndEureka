@@ -1,0 +1,33 @@
+package com.test.collection;
+
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Set;
+
+public class Test {
+
+	public static void main(String[] args) {
+		String name = "gokul pain is a contractor";
+		char[] nameArray = name.toCharArray();
+		
+		Map<Character,Integer> m = new HashMap<Character,Integer>();
+		
+		for(char a : nameArray) {
+			if(m.containsValue(a)) {
+				m.put(a, m.get(a)+1);
+				
+			}
+			
+			else {
+				m.put(a, 1);
+			}
+		}
+		
+		Set<Character> key = m.keySet();
+		
+		for(char k : key) {
+			System.out.println(k+" number of "+m.get(k));
+		}
+	}
+	
+}

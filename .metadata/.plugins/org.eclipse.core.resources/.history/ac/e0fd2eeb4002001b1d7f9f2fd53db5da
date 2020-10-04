@@ -1,0 +1,31 @@
+package com.test.collection;
+
+import java.util.Arrays;
+import java.util.LinkedList;
+import java.util.List;
+
+public class BNYMLinkedList {
+	
+	private static LinkedList<Integer> middleList(LinkedList<Integer> list) {
+		
+		int div = list.size()/2;
+		
+		LinkedList<Integer> newList = new LinkedList<>();
+		 for(int i=div;i<list.size();i++ ) {
+			 newList.add(list.get(i));
+		 }
+		return newList;
+
+	}
+public static void main(String[] args) {
+	
+	LinkedList<Integer> l = new LinkedList<>();
+	l.add(1);
+	l.add(2);
+	l.add(3);
+	l.add(4);
+	l.add(5);
+	System.out.println(middleList(l));
+	
+}
+}

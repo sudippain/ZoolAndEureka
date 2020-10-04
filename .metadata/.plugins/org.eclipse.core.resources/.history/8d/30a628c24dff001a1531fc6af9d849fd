@@ -1,0 +1,13 @@
+package com.feature.StreamApi;
+
+import java.util.concurrent.Executor;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+
+public class CallableFutureDemo {
+
+	public static void main(String[] args) {
+		
+		ExecutorService service = Executors.newFixedThreadPool(nThreads:10);	
+	}
+}

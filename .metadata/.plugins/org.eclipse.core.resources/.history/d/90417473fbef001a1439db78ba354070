@@ -1,0 +1,28 @@
+package com.test.collection;
+
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Map;
+import java.util.Set;
+
+public class Test {
+
+	public static void main(String[] args) {
+		
+		HashMap<Integer, String> h = new HashMap<>();
+		h.put(1, "Sudip");
+		h.put(2, "Gokul");
+		h.put(3, "Bani");
+		h.put(4, "Payel");
+		h.put(5, "Sruiti");
+		h.put(6, "Boudi");
+		Set<Integer> s = h.keySet();
+		
+		for(int k : s) {
+			
+			System.out.println(h.get(k));
+		}
+		
+	}
+	
+}

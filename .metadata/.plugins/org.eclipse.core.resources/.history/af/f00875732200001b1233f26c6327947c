@@ -1,0 +1,5 @@
+package com.example.TestProject.model;
+
+public class GetPropValue {
+
+}

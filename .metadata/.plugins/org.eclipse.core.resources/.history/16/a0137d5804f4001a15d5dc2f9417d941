@@ -1,0 +1,107 @@
+package com.test.collection;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+ class Movie1 implements Comparable<Movie1>{
+
+	String movieName;
+	double movieRating;
+	int movieYear;
+	public Movie1(String movieName,double movieRating,int movieYear) {
+		this.movieName = movieName;
+		this.movieRating = movieRating;
+		this.movieYear = movieYear;
+	}
+	
+	@Override
+	public int compareTo(Movie1 o) {
+		return this.movieYear - o.movieYear;
+	}
+
+	public String getMovieName() {
+		return movieName;
+	}
+
+	public double getMovieRating() {
+		return movieRating;
+	}
+
+	public int getMovieYear() {
+		return movieYear;
+	}
+	
+	
+	
+	
+	
+}
+class MovieName implements Comparator<Movie1>
+{
+
+	@Override
+	public int compare(Movie1 m1, Movie1 m2) {
+		return m1.getMovieName().compareTo(m2.getMovieName());
+	}	
+}
+
+class MovieRating implements Comparator<Movie1>{
+
+	@Override
+	public int compare(Movie1 o1, Movie1 o2) {
+		if(o1.getMovieRating()>o2.getMovieYear())
+			return 1;
+		if(o1.getMovieRating()<o1.getMovieYear())
+			return -1;
+		else 
+			return 0;
+	}
+	
+}
+public class Comparator_Movie {
+	public static void main(String[] args) {
+	
+		
+		ArrayList<Movie1> list = new ArrayList<Movie1>();
+		list.add(new Movie1("Kahona Paya Ha", 6.8, 2001));
+		list.add(new Movie1("Don", 3.8, 2004));
+		list.add(new Movie1("D.D.L.J", 7.8, 1994));
+		
+		System.out.println("Before Sorting List");
+		
+		for(Movie1 m : list)
+			System.out.println("Movie Name -->"+m.getMovieName()+" | Rating --> "+m.getMovieRating()+" | Year --> "+m.getMovieYear() );
+		
+		MovieName mn = new MovieName();
+		Collections.sort(list, mn);
+		
+		System.out.println("Sorting Movie By Movie Name");
+		for(Movie1 m : list)
+			System.out.println("Movie Name -->"+m.getMovieName()+" | Rating --> "+m.getMovieRating()+" | Year --> "+m.getMovieYear() );
+		
+		Movie mr = new MovieName();
+		Collections.sort(list, mr);
+		
+		System.out.println("Sorting Movie By Movie Name");
+		for(Movie1 m : list)
+			System.out.println("Movie Name -->"+m.getMovieName()+" | Rating --> "+m.getMovieRating()+" | Year --> "+m.getMovieYear() );
+		
+		
+		Collections.sort(list);
+		System.out.println("Sorting Movie By Movie Name");
+		for(Movie1 m : list)
+			System.out.println("Movie Name -->"+m.getMovieName()+" | Rating --> "+m.getMovieRating()+" | Year --> "+m.getMovieYear() );
+		
+		
+		
+		
+	
+	}
+	
+	
+	
+
+
+	
+
+}

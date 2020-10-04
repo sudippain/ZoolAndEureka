@@ -1,0 +1,14 @@
+package com.feature.StreamApi;
+
+public class InnerClassDemo {
+
+	public class InnerClassDemo2{
+		void innerMethod() {
+			System.out.println("This is from inner Mathod");
+		}
+	}
+	
+	public void outterMethod() {
+		System.out.println("This is from outer method");
+	}
+}

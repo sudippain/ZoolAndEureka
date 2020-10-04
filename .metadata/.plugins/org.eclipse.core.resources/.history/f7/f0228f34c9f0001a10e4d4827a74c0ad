@@ -1,0 +1,23 @@
+package com.test.collection;
+
+abstract  A{
+   abstract	void name();
+	abstract void sum(int a,int b);
+}
+
+public class abstruction extends A{
+
+	
+	void name() {
+		System.out.println("Sudip");
+	}
+	
+	void sum(int a,int b) {
+		System.out.println(a+b);
+	}
+	public static void main(String[] args) {
+		abstruction obj = new abstruction();
+		obj.name();
+		obj.sum(2, 2);
+	}
+}

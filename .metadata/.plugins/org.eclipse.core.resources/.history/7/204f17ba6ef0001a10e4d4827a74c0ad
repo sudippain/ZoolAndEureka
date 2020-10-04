@@ -1,0 +1,14 @@
+package com.test.collection;
+
+
+class A{
+	A(){
+		
+	}
+	public int sum(int a,int b) {
+		return a+b;
+	}
+}
+public class OverRide {
+
+}

@@ -1,0 +1,22 @@
+package com.feature.StreamApi;
+
+import java.util.Arrays;
+import java.util.List;
+import java.util.function.Consumer;
+import java.util.function.Function;
+import java.util.function.Predicate;
+
+public class filterMapCountSortedDistinctMaxMin {
+
+	public static void main(String[] args) {
+		List<Integer> listNum = Arrays.asList(1,2,3,4,5);
+		Predicate<Integer> p = a -> a>3;
+		Consumer<Integer> c = b -> System.out.println(b);
+		System.out.println("Using Normal Process");
+		listNum.stream().filter(p).forEach(c);
+		listNum.stream().filter(a ->a>3).forEach(System.out::println);
+		
+		
+		listNum.stream().map(a -> a+a).forEach(System.out::println);
+	}
+}

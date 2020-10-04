@@ -1,0 +1,5 @@
+#No need to this prefix it takes automatically
+#spring.thymeleaf.prefix=classpath:/templates/
+#Default value for suffix is .html
+spring.thymeleaf.suffix: .jsp 
+spring.thymeleaf.cache: false

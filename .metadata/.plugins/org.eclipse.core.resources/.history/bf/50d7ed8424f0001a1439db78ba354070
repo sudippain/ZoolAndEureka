@@ -1,0 +1,55 @@
+package com.test.collection;
+
+import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Map;
+import java.util.Set;
+import java.util.TreeMap;
+
+public class Test {
+
+	public static void main(String[] args) {
+		
+	/*	HashMap<Integer, String> h = new HashMap<>();
+		h.put(1, "Sudip");
+		h.put(2, "Gokul");
+		h.put(3, "Bani");
+		h.put(4, "Payel");
+		h.put(5, "Sruiti");
+		h.put(6, "Boudi");
+		Set<Integer> s = h.keySet();
+		
+		for(int k : s) {
+			
+			System.out.println("Key "+k+" Value "+h.get(k));
+			
+		}
+		
+		for(Map.Entry<Integer, String> m : h.entrySet())
+			System.out.println("Key "+m.getKey()+" Value "+m.getValue());
+		*/
+		
+	/*	HashMap<Integer, Character> m = new HashMap<>();
+		m.put(11, 'V');
+		m.put(33, 'M');
+		m.put(99, 'N');
+		m.put(44, 'D');
+		m.put(77, 'A');
+		
+		System.out.println("Before Sorting");
+		for(int k : m.keySet())
+			System.out.println(k +" -> "+m.get(k));
+	}
+
+	private Comparator<? super Integer> m;
+	
+	Map<Integer, Character> map = new TreeMap<Integer, Character>(m);*/ 
+	
+	
+			
+	
+	
+	
+}

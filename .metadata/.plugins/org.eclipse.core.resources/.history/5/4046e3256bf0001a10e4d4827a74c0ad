@@ -1,0 +1,21 @@
+package com.test.collection;
+
+public class OverLoading {
+	
+	public void sum(int a) {
+		
+	}
+public void sum(int a,int b) {
+		
+	}
+public void sum(int a,int b,int c) {
+	
+}
+public void sum(int a,int b ,int c,int d) {
+	
+}
+	public static void main(String[] args) {
+		
+	}
+
+}

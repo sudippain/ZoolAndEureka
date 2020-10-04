@@ -1,0 +1,29 @@
+package com.test.collection;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class MaxStringOccuranceSentence {
+	
+	private static void stringOccurance(List<String> l) {
+		
+    for(String s : l)
+    	System.out.println(s);
+	}
+public static void main(String[] args) {
+	
+	List<String> list = new ArrayList<>();
+	list.add("Red");
+	list.add("Yellow");
+	list.add("Green");
+	list.add("Blue");
+	list.add("Yellow");
+	list.add("White");
+	list.add("Red");
+	list.add("Green");
+	
+	stringOccurance(list);
+	
+	
+}
+}

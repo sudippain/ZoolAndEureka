@@ -1,0 +1,20 @@
+package com.test.collection;
+
+class Super { 
+public static void abc(){System.out.println("abc-super");
+} 
+public void xyz(){System.out.println("xyz-super");}
+}
+
+class SubClass extends Super {
+ public static void abc(){
+ System.out.println("abc-child");} 
+ 
+ public void xyz(){
+ System.out.println("xyz-child");}
+ 
+ public static void main(String[] args) { 
+ Super sup1 = new Super(); 
+ Super sup2 = new SubClass();
+ SubClass subclass = new SubClass();
+ sup1.abc();sup2.abc(); subclass.abc(); sup2.xyz();  subclass.xyz(); } }

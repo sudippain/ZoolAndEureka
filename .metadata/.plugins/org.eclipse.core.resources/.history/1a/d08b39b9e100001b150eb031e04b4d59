@@ -1,0 +1,24 @@
+package com.example.application.Crud;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+
+@SpringBootApplication
+
+public class CrudApplication {
+
+	
+	
+	public static void main(String[] args) {
+		Logger log = LoggerFactory.getLogger(CrudApplication.class);
+		log.error("This is Error");
+		log.warn("This is warn");
+		log.info("This is info");
+		log.debug("This is debug");
+		SpringApplication.run(CrudApplication.class, args);
+	}
+
+}

@@ -1,0 +1,62 @@
+package com.test.collection;
+
+class M extends Thread{
+	public void run() {
+		System.out.println("From class M run() start");
+		for(int i =0;i<5;i++)
+			System.out.println("Thread from class M -> "+i);
+		System.out.println("From class M run() End");
+	}
+}
+
+class N extends Thread{
+	public void run() {
+		System.out.println("From class N run() start");
+		for(int i =0;i<5;i++)
+			System.out.println("Thread from class N -> "+i);
+		System.out.println("From class N run() End");
+	}
+}
+
+class O extends Thread{
+	public void run() {
+		System.out.println("From class O run() start");
+		for(int i =0;i<5;i++)
+			System.out.println("Thread from class O -> "+i);
+		System.out.println("From class O run() End");
+	}
+}
+
+
+
+public class ThreadImpl extends Thread {
+
+	
+	public void run() {
+		System.out.println("From class ThreadImpl run() start");
+		for(int i =0;i<5;i++)
+			System.out.println("Thread from class ThreadImpl -> "+i);
+		System.out.println("From class ThreadImpl run() End");
+	}
+	
+	public static void main(String[] args) {
+		
+		ThreadImpl t = new ThreadImpl();
+		M m = new M();
+		N n = new N();
+		O o = new O();
+	    
+		/*
+		 * m.run(); n.run(); o.run(); t.run();
+		 */
+		/*
+		 * m.setDaemon(true);
+		 */
+		  m.start();
+		  m.sleep(3000);
+		  n.start();
+		  o.start();
+		  t.start();
+		 
+	}
+}

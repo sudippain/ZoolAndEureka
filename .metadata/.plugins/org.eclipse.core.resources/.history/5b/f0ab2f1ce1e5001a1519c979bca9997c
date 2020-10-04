@@ -1,0 +1,23 @@
+package com.test.collection;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class TrickyMapNumberOfCharacter {
+
+	public static void main(String[] args) {
+		String str = "Sudip is a good Student";
+		 char charArray[] = str.toCharArray();
+		Map<Character, Integer> map = new HashMap<>();
+		
+		for(Character ch : charArray)
+		{
+			if(map.containsKey(ch)) {
+				map.put(ch, map.get(ch)+1);
+			}else {
+				map.put(ch, map.get(1))
+			}
+		}
+		
+	}
+}

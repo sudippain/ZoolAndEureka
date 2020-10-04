@@ -1,0 +1,11 @@
+package com.feature.StreamApi;
+
+import java.util.Date;
+
+public class DateTime extends Object {
+
+	public static void main(String[] args) {
+		Date d = new Date(2020,8,15);
+		System.out.println(d);
+	}
+}

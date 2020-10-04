@@ -1,0 +1,33 @@
+package com.test.collection;
+
+abstract class Y{
+	Y(){
+		System.out.println("Default Constructor of abstract class A");
+	}
+   abstract	void name();
+	abstract void sum(int a,int b);
+}
+
+public class abstruction extends Y{
+
+	public abstruction() {
+		super();
+	}
+	
+	void name() {
+	
+		System.out.println("Sudip");
+	}
+	
+	void sum(int a,int b) {
+		System.out.println(a+b);
+	}
+	public static void main(String[] args) {
+		Y obj1 = new abstruction();
+		obj1.name();
+		
+		abstruction obj = new abstruction();
+		obj.name();
+		obj.sum(2, 2);
+	}
+}

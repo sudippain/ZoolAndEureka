@@ -1,0 +1,15 @@
+package com.test.collection;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class BNYMLinkedListTest {
+
+	@Test
+	public void test1() {
+		
+		
+	}
+
+}

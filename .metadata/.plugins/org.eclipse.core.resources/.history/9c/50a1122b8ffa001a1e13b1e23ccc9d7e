@@ -1,0 +1,12 @@
+package com.feature.StreamApi;
+
+@FunctionalInterface
+interface functionalIface{
+	void show();
+}
+
+public class FunctionalInterfaceDemo implements functionalIface{
+
+	
+	
+}

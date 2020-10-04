@@ -1,0 +1,22 @@
+package com.get.properties.GetProperties.model;
+
+import org.springframework.beans.factory.annotation.Value;
+
+public class AppProperties {
+
+	
+	private String prefix;
+	private String suffix;
+	private String cache;
+	public void setPrefix(String prefix) {
+		this.prefix = prefix;
+	}
+	public void setSuffix(String suffix) {
+		this.suffix = suffix;
+	}
+	public void setCache(String cache) {
+		this.cache = cache;
+	}
+	
+	
+}

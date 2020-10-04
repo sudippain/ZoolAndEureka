@@ -1,0 +1,14 @@
+package com.test.collection;
+
+abstract class A{
+	void name();
+	void sum(int a,int b);
+}
+
+public class abstruction extends A{
+
+	
+	void name() {
+		System.out.println("Sudip");
+	}
+}

@@ -1,0 +1,37 @@
+package com.example.application.Crud;
+
+
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+
+@SpringBootApplication
+
+public class CrudApplication {
+
+	
+	
+	public static void main(String[] args) {
+		org.slf4j.Logger log1 = LoggerFactory.getLogger(CrudApplication.class); 
+		Logger log2 = LogManager.getLogger(CrudApplication.class);
+		
+		SpringApplication.run(CrudApplication.class, args);
+		System.out.println("This is from sl4j");
+		log1.error("This is Error");
+		log1.warn("This is warn");
+		log1.info("This is info");
+		log1.debug("This is debug");
+		log1.trace("This is Trace");
+		System.out.println("This is from Log4j2");
+		log2.error("This is Error");
+		log2.warn("This is warn");
+		log2.info("This is info");
+		log2.debug("This is debug");
+		log2.trace("This is Trace");
+	}
+
+}

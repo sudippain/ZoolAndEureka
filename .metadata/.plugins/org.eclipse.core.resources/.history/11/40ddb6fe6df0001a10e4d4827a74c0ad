@@ -1,0 +1,39 @@
+package com.test.collection;
+
+public class OverLoading {
+	
+	
+	public OverLoading(int a) {
+	System.out.println(a+a);
+	}
+	public OverLoading(int a,float b) {
+		System.out.println((float)a+b); 
+	}
+	public  OverLoading(float a,float b) {
+		System.out.println(a+b);
+	}
+	public int sum(int a) {
+		return a+a;
+	}
+public int sum(int a,int b) {
+		return a+b;
+	}
+public int sum(int a,int b,int c) {
+	return a+b+c;
+}
+public int sum(int a,int b ,int c,int d) {
+	return a+b+c+d;
+}
+	public static void main(String[] args) {
+		OverLoading obj = new OverLoading();
+		System.out.println(new OverLoading(2));
+		
+		
+	
+		System.out.println(obj.sum(2));
+		System.out.println(obj.sum(2,3));
+		System.out.println(obj.sum(2,3,4));
+		System.out.println(obj.sum(2,3,4,5));
+	}
+
+}

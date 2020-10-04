@@ -1,0 +1,10 @@
+package com.feature.StreamApi;
+
+@FunctionalInterface
+interface FunctionalInterface{
+	void show();
+}
+
+public class FunctionalInterfaceDemo implements Fun{
+
+}

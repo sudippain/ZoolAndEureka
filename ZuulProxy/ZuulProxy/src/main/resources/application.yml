@@ -1,0 +1,35 @@
+eureka:
+    client:
+        fetchRegistry: true
+        registerWithEureka: true
+        serviceUrl:
+            defaultZone: http://localhost:8661/eureka/
+    instance:
+        hostname: localhost
+server:
+    port: 9000
+spring:
+    application:
+        name: ZuulProxy
+        
+zuul:
+  host:
+    connect-timeout-millis: 5000000
+    socket-timeout-millis: 5000000
+  ignored-services: '*'
+  routes :    service1 :
+      path : /service1/**
+      serviceId: service1
+      stripPrefix: true
+    service2 :
+      path : /service2/**
+      serviceId: service2
+      stripPrefix: true
+    service3 :
+      path : /service3/**
+      serviceId: service3
+      stripPrefix: true
+
+#ribbon:
+#  ConnectTimeout : 10000
+#  ReadTimeout : 10000

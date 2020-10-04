@@ -1,0 +1,15 @@
+package com.feature.StreamApi;
+interface ownFuncInterface{
+	void functionalInterfacenmethod();
+	int name(String name);
+}
+public class OwnFunctionalInterface {
+
+	public static void main(String[] args) {
+		
+		ownFuncInterface o = () -> System.out.println("This is from functiona interface method");
+		ownFuncInterface o1 = (n) -> System.out.println("This is from functiona interface method"+n);
+		
+		o.functionalInterfacenmethod();
+	}
+}

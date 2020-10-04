@@ -1,0 +1,27 @@
+package com.get.properties.GetProperties.controller;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+@RequestMapping("/getProp")
+public class GetPropUsingValueAnnotation {
+
+	@Value("${spring.thymeleaf.prefix}")
+	private String prefix;
+	@Value("${spring.thymeleaf.suffix}")
+	private String suffix;
+	@Value("${spring.thymeleaf.cache}")
+	private String cache;
+	
+	private List<String> l = new ArrayList<>();
+	@GetMapping("/all")
+	private List<String> getAllApplicationProperties() {
+		
+	}
+}

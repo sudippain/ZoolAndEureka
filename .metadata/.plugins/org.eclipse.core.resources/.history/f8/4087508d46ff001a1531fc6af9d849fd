@@ -1,0 +1,32 @@
+package com.feature.StreamApi;
+
+class RaA extends Thread{
+	public void run() {
+		
+		System.out.println("From RaA method");
+	}
+}
+
+class RaB extends Thread{
+	public void run() {
+		
+		System.out.println("From RaB method");
+	}
+}
+
+class RaC extends Thread{
+	public void run() {
+		
+		System.out.println("From RaC method");
+	}
+}
+
+public class Runnable {
+
+	public static void main(String[] args) {
+		
+		Thread t1 = new Thread(new Rac());
+	}
+	
+	
+}

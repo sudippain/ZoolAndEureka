@@ -1,0 +1,20 @@
+package com.get.properties.GetProperties.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+
+@Controller
+@RequestMapping("/api")
+public class BaseController {
+
+	/* @RequestMapping(method = RequestMethod.GET,value = "/hello") */
+	@GetMapping("/hello")
+	private String hello() {
+		return "Hello World";
+	}
+
+	@GetMapping("/index")
+	private String index() {
+		return "index";
+	}
+}

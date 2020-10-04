@@ -1,0 +1,11 @@
+package com.get.properties.GetProperties.model;
+
+import org.springframework.beans.factory.annotation.Value;
+
+public class AppProperties {
+
+	
+	private String prefix;
+	private String suffix;
+	private String cache;
+}

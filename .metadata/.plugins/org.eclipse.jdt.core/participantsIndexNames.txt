@@ -1,0 +1,5 @@
+INDEX VERSION 1.131
+F:\ZoolAndEureka\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1022742947.index
+\GetProperties\src\main\java
+F:\ZoolAndEureka\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1166186195.index
+\GetProperties\src\main\java

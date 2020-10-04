@@ -1,0 +1,5 @@
+package com.get.properties.GetProperties.model;
+
+public class AppProperties {
+
+}

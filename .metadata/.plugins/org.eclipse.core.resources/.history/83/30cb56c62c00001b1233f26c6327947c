@@ -1,0 +1,30 @@
+package com.get.properties.GetProperties.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+@RequestMapping("/thymleaf")
+public class ThymleafController {
+
+	/* @RequestMapping(method = RequestMethod.GET,value = "/hello") */
+	@GetMapping("/html")
+	private String sudip() {
+		/*
+		 * Have to mention sudip.html bz spring.thymeleaf.suffix: .jsp explicitly
+		 * mention in application.properties
+		 */
+		return "sudip.html"; 
+	}
+
+	@GetMapping("/jsp")
+	private String index() {
+		return "soma";
+	}
+	
+	@GetMapping("/static/html")
+	private String staticFolder() {
+		return "static.html";
+	}
+}

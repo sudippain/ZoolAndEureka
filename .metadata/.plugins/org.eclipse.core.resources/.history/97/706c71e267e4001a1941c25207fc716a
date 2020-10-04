@@ -1,0 +1,12 @@
+package com.test.collection;
+
+class A{
+	public void test1() {
+		System.out.println("This is from parent class");
+	}
+}
+
+
+public class TestOverride {
+
+}
